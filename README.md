@@ -4,3 +4,12 @@ I've been practicing coding problems on Leetcode.com which involve algorithms an
 
 I can code in PHP, Java, C#, JavaScript and Python and use whichever fits the project best. For learning purposes, Python code is fairly easy to test locally, so most of the code here. I'd love to get feedback for improvement (on code syntax, data structures, etc).
 
+
+# About Me
+
+My name is Rom. I'm based in San Diego. I'm passionate about technology, beer, travel and hiking.
+
+[Leetcode: leetcode.com/rommelparas](https://www.leetcode.com/rommelparas)  
+[LinkedIn: linkedin.com/in/rommelparas](https://linkedin.com/in/rommelparas/)  
+[Instagram: instagram.com/rommelparas](https://www.instagram.com/rommelparas)  
+[Email: rommelparas (at) gmail.com](#)  
