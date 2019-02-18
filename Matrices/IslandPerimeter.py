@@ -1,5 +1,7 @@
 # Problem Statement: https://leetcode.com/problems/island-perimeter/
 
+import sys, os
+
 class Solution:
     def islandPerimeter(self, grid: 'List[List[int]]') -> 'int':
         perimeter = 0
@@ -28,14 +30,23 @@ class Solution:
             return 0 if grid[row][col] == 1 else 1
         return 0
 
-# Test Cases
-s = Solution()
-assert s.islandPerimeter([[]]) == 0
-assert s.islandPerimeter([[0]]) == 0
-assert s.islandPerimeter([[1]]) == 4
-assert s.islandPerimeter([[1,0],[1,0],[1,1]]) == 10
-assert s.islandPerimeter([[0,1,1]]) == 6
-assert s.islandPerimeter([[0,0],[0,0]]) == 0
-assert s.islandPerimeter([[0,1,1],[1,1,1]]) == 10
-assert s.islandPerimeter([[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]]) == 16
-print("Passed all test cases. Yay!")
+def main():
+    # Test Cases
+    s = Solution()
+    try:
+        assert s.islandPerimeter([[]]) == 0
+        assert s.islandPerimeter([[0]]) == 0
+        assert s.islandPerimeter([[1]]) == 4
+        assert s.islandPerimeter([[1,0],[1,0],[1,1]]) == 10
+        assert s.islandPerimeter([[0,1,1]]) == 6
+        assert s.islandPerimeter([[0,0],[0,0]]) == 0
+        assert s.islandPerimeter([[0,1,1],[1,1,1]]) == 10
+        assert s.islandPerimeter([[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]]) == 16
+        print("Passed all test cases. Yay!")
+    except:
+        exc_type, exc_obj, exc_tb = sys.exc_info()
+        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        print("Failed at least 1 test case. Check error in line {}.".format(exc_tb.tb_lineno))
+
+if __name__ == '__main__':
+    main()
