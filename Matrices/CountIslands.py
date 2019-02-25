@@ -61,3 +61,5 @@ try:
     print("Passed all test cases. Yay!")
 except AssertionError:
     print("One of the test cases failed. Check!")
+finally:
+    print("End of test")
